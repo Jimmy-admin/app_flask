@@ -16,9 +16,14 @@
 					<p style="padding-left:20px">- {{ inter }}</p> 
 				{% endfor %}
 				<p>log : {{ data.log}} </p>
-				<p>{{tes}} </p>
-				{% for elem in logdata %}
-					<p style="padding-left:20px">- {{ elem }}</p>
+				
+				{% for elem in list_files%}
+					
+					<a href="{{elem}}">- {{ elem }}</a>
 				{% endfor %}				
-    </body>
+
+                                {% for elem in list_path%}
+
+                                        <a href="{{elem}}">- {{ elem }}</a>
+                                {% endfor %}    </body>
 </html>
